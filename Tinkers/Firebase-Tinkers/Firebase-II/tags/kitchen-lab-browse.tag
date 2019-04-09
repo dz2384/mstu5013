@@ -10,7 +10,7 @@
 	</h3>
 
 	<div class="laboratory" each={ lab in labs }>
-		<h4><button class="joinBtn">JOIN LAB</button> { lab.name }</h4>
+		<h4><button class="joinBtn">JOIN LAB</button> { lab.name }<button onclick={updateName} show={lab.owner==this.user.username}>Edit</button></h4>
 	</div>
 
 	<p hide={ labs.length > 0 }>No Labs Found...</p>
@@ -30,6 +30,11 @@
 			this.mode = this.refs.mode.value;
 			this.changeQuery();
 		}
+
+    this.updateName = function() {
+      alert();
+      console.log(this.lab)
+    }
 
 		changeQuery() {
 			stopListening();
