@@ -8,6 +8,7 @@
 		let beatA = new Audio('./sounds/snareA.wav');
 		let beatB = new Audio('./sounds/snareB.wav');
 
+
 		this.playing = false;
 		this.beatIndex = 0;
 		this.beatCount = 0;

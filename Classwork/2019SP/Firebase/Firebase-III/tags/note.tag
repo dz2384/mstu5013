@@ -8,6 +8,7 @@
 		this.roomUser = opts.roomUser;
 		this.cue = false;
 
+
 		toggleNote(event) {
 			if (this.isUser) {
 				let roomUserDoc = database.collection('sound-rooms/' + this.room.id + '/users').doc(this.roomUser.id);
@@ -19,6 +20,9 @@
 			console.log('x')
 			if (this.i === beatIndex) {
 				this.cue = true;
+				if(this.roomUser.notes[this.i].play){
+					new Audio(this.roomUser.notes[this.i].sound).play();
+				}
 			} else {
 				this.cue = false;
 			}

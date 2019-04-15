@@ -1,9 +1,9 @@
 <app>
 	<navbar user={ user } room={ room }></navbar>
 
-  <div class="container">
-  	<div class="row">
-  		<div class="col">
+	<div class="container">
+		<div class="row">
+			<div class="col">
 				<div if={ room }>
 					<h1>Room: { room.id }</h1>
 					<div each={ roomUser in roomUsers }>
@@ -17,16 +17,17 @@
 					</p>
 					<metronome></metronome>
 				</div>
-  		</div>
-  	</div>
-  </div>
+			</div>
+		</div>
+	</div>
 
-  <script>
-    // JAVASCRIPT
+	<script>
+		// JAVASCRIPT
 		let roomsRef = database.collection('sound-rooms');
-
+		let beatC = new Audio('./sounds/credulous.mp3');
 		this.room = null;
 		this.roomUsers = [];
+
 
 		firebase.auth().onAuthStateChanged(userObj => {
 			if (userObj) {
@@ -75,10 +76,43 @@
 					id: this.user.uid,
 					name: this.user.displayName,
 					notes: [
-						{play:false},{play:false},{play:false},{play:false},
-						{play:false},{play:false},{play:false},{play:false},
-						{play:false},{play:false},{play:false},{play:false},
-						{play:false},{play:false},{play:false},{play:false}
+						{
+							play: false,
+							sound: './sounds/credulous.mp3'
+						}, {
+							play: false
+						}, {
+							play: false,
+							sound: './sounds/filling-your-inbox.mp3'
+						}, {
+							play: false
+						}, {
+							play: false,
+							sound: './sounds/get-outta-here.mp3'
+						}, {
+							play: false
+						}, {
+							play: false,
+							sound:'./sounds/glass-breaking.mp3'
+						}, {
+							play: false
+						}, {
+							play: false
+						}, {
+							play: false
+						}, {
+							play: false
+						}, {
+							play: false
+						}, {
+							play: false
+						}, {
+							play: false
+						}, {
+							play: false
+						}, {
+							play: false
+						}
 					]
 				});
 				return roomUsersRef;
@@ -96,11 +130,10 @@
 				});
 			});
 		});
+	</script>
 
-  </script>
-
-  <style>
-    /* CSS */
-    :scope {}
-  </style>
+	<style>
+		/* CSS */
+		:scope {}
+	</style>
 </app>
