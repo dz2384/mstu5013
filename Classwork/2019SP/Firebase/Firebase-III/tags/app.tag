@@ -78,40 +78,52 @@
 					notes: [
 						{
 							play: false,
-							sound: './sounds/credulous.mp3'
-						}, {
-							play: false
+							sound:'./sounds/snap.mp3'
 						}, {
 							play: false,
-							sound: './sounds/filling-your-inbox.mp3'
-						}, {
-							play: false
+							sound:'./sounds/bummm.mp3'
 						}, {
 							play: false,
-							sound: './sounds/get-outta-here.mp3'
-						}, {
-							play: false
+							sound: './sounds/kick.mp3'
 						}, {
 							play: false,
-							sound:'./sounds/glass-breaking.mp3'
+							sound:'./sounds/snare.mp3'
 						}, {
-							play: false
+							play: false,
+							sound: './sounds/snap.mp3'
 						}, {
-							play: false
+							play: false,
+							sound:'./sounds/piping.mp3'
 						}, {
-							play: false
+							play: false,
+							sound:'./sounds/kick.mp3'
 						}, {
-							play: false
+							play: false,
+							sound:'./sounds/snare.mp3'
 						}, {
-							play: false
+							play: false,
+							sound:'./sounds/snap.mp3'
 						}, {
-							play: false
+							play: false,
+							sound:'./sounds/bummm.mp3'
 						}, {
-							play: false
+							play: false,
+							sound:'./sounds/kick.mp3'
 						}, {
-							play: false
+							play: false,
+							sound:'./sounds/snare.mp3'
 						}, {
-							play: false
+							play: false,
+							sound:'./sounds/snap.mp3'
+						}, {
+							play: false,
+							sounds:'./sounds/bummm.mp3'
+						}, {
+							play: false,
+							sound:'./sounds/kick.mp3'
+						}, {
+							play: false,
+							sound:'./sounds/snare.mp3'
 						}
 					]
 				});

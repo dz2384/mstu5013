@@ -5,7 +5,7 @@
 	<script>
 		const BEAT = 500;
 		let metronome;
-		let beatA = new Audio('./sounds/snareA.wav');
+		let beatA = new Audio('');
 		let beatB = new Audio('./sounds/snareB.wav');
 
 
